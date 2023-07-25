@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { PatientDto } from '../../../Interfaces';
 
 const PatientTable = () => {
@@ -49,6 +50,7 @@ const PatientTable = () => {
   const handleSave = () => {
     // Perform the save logic here (e.g., update the patient on the server).
     // For this example, we'll just update the local patients array for demonstration purposes.
+    console.log(updatedData);
     const updatedPatients = patients.map((patient) => {
       if (patient.id === editingPatientId) {
         return { ...patient, ...updatedData };
@@ -184,9 +186,11 @@ const PatientTable = () => {
                 <button className="btn btn-danger ml-2 m-1" onClick={() => handleDelete(patient.id)}>
                   Delete
                 </button>
-                <button className="btn btn-success ml-2 m-1" onClick={() => handleDelete(patient.id)}>
-                  Add
-                </button>
+                <Link to={`/NewPatientForm`}>
+                  <button className="btn btn-success ml-2 m-1" onClick={() => handleDelete(patient.id)}>
+                    Add
+                  </button>
+                </Link>
               </td>
             </tr>
           ))}

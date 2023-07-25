@@ -1,7 +1,8 @@
 import React from "react";
 import { Footer, Header } from "../Components/Layout";
-import { Home, MenuItemDetails, NotFound } from "../Pages";
+import { Home, NotFound } from "../Pages";
 import { Routes, Route } from "react-router-dom";
+import NewPatientForm from "../Components/Page/Patient/NewPatientForm";
 function App() {
   return (
     <div>
@@ -10,8 +11,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route
-            path="/menuItemDetails/:menuItemId"
-            element={<MenuItemDetails />}
+            path="/NewPatientForm"
+            element={<NewPatientForm />}
           ></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
