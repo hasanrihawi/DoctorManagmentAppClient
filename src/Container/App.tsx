@@ -5,9 +5,9 @@ import { Routes, Route } from "react-router-dom";
 import NewPatientForm from "../Components/Page/Patient/NewPatientForm";
 function App() {
   return (
-    <div>
+    <div style={{ width: '100%', height: '100%' }}>
       <Header />
-      <div className="pb-5">
+      <div className="pb-5" style={{ width: '100%', height: '100%' }}>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route
