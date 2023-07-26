@@ -29,6 +29,26 @@ function Header() {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink className="nav-link" aria-current="page" to="/">
+                  Patients
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" aria-current="page" to="/">
+                  Doctors
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" aria-current="page" to="/">
+                  Clinics
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" aria-current="page" to="/">
+                  Appointments
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink
                   className="nav-link"
                   aria-current="page"

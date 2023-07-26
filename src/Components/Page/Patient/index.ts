@@ -1,3 +1,3 @@
-import MenuItemList from "./MenuItemList";
-import MenuItemCard from "./MenuItemCard";
-export { MenuItemList, MenuItemCard };
+import NewPatientForm from "./NewPatientForm";
+import PatientTable from "./PatientTable";
+export { PatientTable, NewPatientForm };
