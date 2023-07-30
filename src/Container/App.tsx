@@ -3,6 +3,7 @@ import { Footer, Header } from "../Components/Layout";
 import { Home, NotFound } from "../Pages";
 import { Routes, Route } from "react-router-dom";
 import NewPatientForm from "../Components/Page/Patient/NewPatientForm";
+import Patients from "../Pages/Patients";
 function App() {
   return (
     <div style={{ width: '100%', height: '100%' }}>
@@ -13,6 +14,10 @@ function App() {
           <Route
             path="/NewPatientForm"
             element={<NewPatientForm />}
+          ></Route>
+          <Route
+            path="/Patients"
+            element={<Patients />}
           ></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
